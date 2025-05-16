@@ -7,4 +7,4 @@ git add ex1.py
 
 comitar (commit) na arvore -> gravar um 
 '''''''''
-git config --global user.name '' git config --global user.email ""
+#git config --global user.name '' git config --global user.email ""
