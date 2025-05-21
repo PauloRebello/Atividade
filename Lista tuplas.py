@@ -58,22 +58,41 @@
 # print("Lista em ordem decrescente: ",listaforadeordem)
 
 # 10. Juntar lista de palavras em string separada por vírgulas
-listadepalavras = ["computador","mouse","teclado"]
-ex10= ", " .join(listadepalavras)
-print(ex10)
+# listadepalavras = ["computador","mouse","teclado"]
+# ex10= ", " .join(listadepalavras)
+# print(ex10)
+
+# 11. Lista com 10 zeros usando for
+# listacomzero = []
+# for i in range (10):
+#     zero11=0
+#     listacomzero.append(zero11)
+# print(listacomzero)
+
+#12. Verificar se cada número é maior que 10
+# listavazia12 = []
+# for i in range (5):
+#     n12=int(input("Digite um número: "))
+#     if n12 >10:
+#         print("Maior que 10")
+#     else:
+#         print("Menor que 10")
+#     listavazia12.append(n12)
+# print(listavazia12)
+
+
+# 14. Lista de frutas com insert no início
+listadefrutas = ["maça","banana","uva"]
+listadefrutas.insert(0,"Laranja")
+print(listadefrutas)
 
 
 
 
-
-
-
-
-
-
-
-
-
+#20. Crie uma lista de 5 letras e converta para uma ´unica string com join.
+listadeletras = ["p","a","u","l","o"]
+letras= "".join(listadeletras)
+print(letras)
 
 
 
