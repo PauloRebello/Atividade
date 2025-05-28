@@ -1,4 +1,4 @@
-#1. Crie uma lista com 5 números inteiros. Imprima o tamanho da lista.
+#1. Crie uma lista com 5 números inteiros. Imprima o tamanho da lista usando len.
 numerosex1 = [1, 2, 3, 4, 5]
 print("Ex1. Tamanho da lista:", len(numerosex1))
 print(numerosex1 [1])
@@ -43,6 +43,13 @@ print("Número menor: ", min(listade5numeros))
 
 
 #7. Use while para imprimir elementos da lista
+def imprimir(lista):
+    i = 0
+    while i < len(lista):
+        print(lista[i])
+        i += 1
+lista7 = ['tenis', 'sapato', 'luva', 'jaqueta']
+imprimir(lista7)
 
 
 #8. Inserir "vermelho" na posição 1
@@ -105,7 +112,7 @@ listadeletras = ["p","a","u","l","o"]
 letras= "".join(listadeletras)
 print(letras)
 
-#21. Solicite ao usu´ario 10 n´umeros, armazene em uma lista e remova todos os n´umeros pares usando remove.
+#21. Solicite ao usuario 10 numeros, armazene em uma lista e remova todos os numeros pares usando remove.
 lista20 = []
 for i in range (10):
     n21=int(input("Digite dez numeros:  "))
@@ -116,7 +123,7 @@ for i in range (10):
 print(lista20)
 
 
-#Dada uma lista com nomes duplicados, elimine os nomes repetidos mantendo a ordem.
+#23Dada uma lista com nomes duplicados, elimine os nomes repetidos mantendo a ordem.
 lista22 = ["Paulo","Vitor","Paulo", "Joao", "Miguel", "Vitor"]
 listaf= []
 for nome in lista22[:]:
@@ -124,33 +131,26 @@ for nome in lista22[:]:
         listaf.append(nome)
 print(listaf)
 
+#treino
+listat = [10, 20, 30, 40, 50]
+listat[1] = 99
+print(listat)
 
 
-
-# Criando a lista
-lista = [10, 20, 30, 40, 50]
-# Substituindo o segundo elemento (índice 1) por 99
-lista[1] = 99
-print(lista)
-
-
-17
-# Criando a lista de 5 números
+#17
 numeros = [10, 20, 30, 40, 50]
-# Inicializando a variável para somar os números
+
 soma = 0
 
-# Usando o laço for para somar os números
 for numero in numeros:
     soma += numero
 
-# Calculando a média
+
 media = soma / len(numeros)
 print(f'Média: {media}')
 
-# 18 Lista fornecida
+# 18 
 lista = [3, 6, 9, 12]
-# Verificando se o número 7 está na lista
 if 7 in lista:
     print("O número 7 está na lista.")
 else:
@@ -158,20 +158,16 @@ else:
 
 # 19 Criando uma lista para armazenar os nomes
 nomes = []
-
-# Loop para solicitar nomes
 while True:
     nome = input("Digite um nome (ou 'sair' para terminar): ")
     if nome.lower() == 'sair':
         break
     nomes.append(nome)
 
-# Imprimindo a lista de nomes
 print("Lista de nomes:", nomes)
 
-#20 Criando a lista de 5 letras
+#20 
 letras = ['a', 'b', 'c', 'd', 'e']
-# Usando join para transformar a lista em uma única string
 resultado = ''.join(letras)
 print(resultado)
 
@@ -203,7 +199,7 @@ def segundo_maior(lista):
 
 
 #34  Faca um programa que leia numeros do usuario ate digitar -1. Depois, imprima a media.
-def calcular_media():
+def cmedia():
     numeros = []
     
     while True:
@@ -221,10 +217,11 @@ def calcular_media():
     else:
         print("Não digitou número.")
 
-calcular_media()
+cmedia()
+
+
 
 #revisar
-
 
 
 # # 2. Solicite 5 nomes e imprima cada nome em uma linha.
