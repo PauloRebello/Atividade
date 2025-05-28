@@ -1,92 +1,103 @@
-# 1. Crie uma lista com 5 números inteiros. Imprima o tamanho da lista.
-# numerosex1 = [1, 2, 3, 4, 5]
-# print("Ex1. Tamanho da lista:", len(numerosex1))
-# print(numerosex1 [1])
+#1. Crie uma lista com 5 números inteiros. Imprima o tamanho da lista.
+numerosex1 = [1, 2, 3, 4, 5]
+print("Ex1. Tamanho da lista:", len(numerosex1))
+print(numerosex1 [1])
 
-# # 2. Solicite 5 nomes e imprima cada nome em uma linha.
+# 2. Solicite 5 nomes e imprima cada nome em uma linha.
 
-# nomes = []
-# for i in range (5):
-#     nome=input("Nomes:  ")
-#     nomes.append(nome)
-# print("Nomes digitados:  ")
-# for nome in nomes:
-#     print(nome)
-
-
-# # 3. Crie uma lista vazia e adicione 3 elementos usando append.
-
-# listavazia = []
-# for i in range (3):
-#     elementos=input("Digite os elementos:  ")
-#     listavazia.append(elementos)
-# print("Elementos adicionados:  ")
-# print(listavazia)
+nomes = []
+for i in range (5):
+    nome=input("Nomes:  ")
+    nomes.append(nome)
+print("Nomes digitados:  ")
+for nome in nomes:
+    print(nome)
 
 
-# # 4. Tupla com dias da semana. Imprima o terceiro dia.
-# diasdasemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
-# print(diasdasemana[2])
+# 3. Crie uma lista vazia e adicione 3 elementos usando append.
 
-# # 5. Remover o número 3 da lista
-# lista1_5 = [1,2,3,4,5]
-# lista1_5.remove(3)
-# print(lista1_5)
-
-# 6. Solicite 5 números e mostre o maior e o menor
-# listade5numeros = []
-# for i in range (5):
-#     n6=input("Digite 5 números:   ")
-#     listade5numeros.append(n6)
-# print("Número maior: ", max(listade5numeros))
-# print("Número menor: ", min(listade5numeros))
+listavazia = []
+for i in range (3):
+    elementos=input("Digite os elementos:  ")
+    listavazia.append(elementos)
+print("Elementos adicionados:  ")
+print(listavazia)
 
 
-# 7. Use while para imprimir elementos da lista
+# 4. Tupla com dias da semana. Imprima o terceiro dia.
+diasdasemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+print(diasdasemana[2])
+
+# 5. Remover o número 3 da lista
+lista1_5 = [1,2,3,4,5]
+lista1_5.remove(3)
+print(lista1_5)
+
+#6. Solicite 5 números e mostre o maior e o menor
+listade5numeros = []
+for i in range (5):
+    n6=input("Digite 5 números:   ")
+    listade5numeros.append(n6)
+print("Número maior: ", max(listade5numeros))
+print("Número menor: ", min(listade5numeros))
 
 
-# 8. Inserir "vermelho" na posição 1
-# listadecores = ["Amarelo","Azul","Verde"]
-# listadecores.insert(1,"Vermelho")
-# print(listadecores)
+#7. Use while para imprimir elementos da lista
 
-# # 9. Ordenar a lista em ordem crescente e decrescente
-# listaforadeordem = [6,5,4,7,8,2,9]
-# listaforadeordem.sort()
-# print("Lista em ordem crescente: ", listaforadeordem)
-# listaforadeordem.reverse()
-# print("Lista em ordem decrescente: ",listaforadeordem)
 
-# 10. Juntar lista de palavras em string separada por vírgulas
-# listadepalavras = ["computador","mouse","teclado"]
-# ex10= ", " .join(listadepalavras)
-# print(ex10)
+#8. Inserir "vermelho" na posição 1
+listadecores = ["Amarelo","Azul","Verde"]
+listadecores.insert(1,"Vermelho")
+print(listadecores)
 
-# 11. Lista com 10 zeros usando for
-# listacomzero = []
-# for i in range (10):
-#     zero11=0
-#     listacomzero.append(zero11)
-# print(listacomzero)
+# 9. Ordenar a lista em ordem crescente e decrescente
+listaforadeordem = [6,5,4,7,8,2,9]
+listaforadeordem.sort()
+print("Lista em ordem crescente: ", listaforadeordem)
+listaforadeordem.reverse()
+print("Lista em ordem decrescente: ",listaforadeordem)
+
+#10. Juntar lista de palavras em string separada por vírgulas
+listadepalavras = ["computador","mouse","teclado"]
+ex10= ", " .join(listadepalavras)
+print(ex10)
+
+#11. Lista com 10 zeros usando for
+listacomzero = []
+for i in range (10):
+    zero11=0
+    listacomzero.append(zero11)
+print(listacomzero)
 
 #12. Verificar se cada número é maior que 10
-# listavazia12 = []
-# for i in range (5):
-#     n12=int(input("Digite um número: "))
-#     if n12 >10:
-#         print("Maior que 10")
-#     else:
-#         print("Menor que 10")
-#     listavazia12.append(n12)
-# print(listavazia12)
+listavazia12 = []
+for i in range (5):
+    n12=int(input("Digite um número: "))
+    if n12 >10:
+        print("Maior que 10")
+    else:
+        print("Menor que 10")
+    listavazia12.append(n12)
+print(listavazia12)
 
 
-# 14. Lista de frutas com insert no início
+#13. Crie uma lista com os n´umeros de 1 a 10 usando range() e imprima somente os pares
+lista= []
+for i in range (1,11):
+    lista.append(i)
+for numero in lista:
+    if numero %2 ==0:
+        print(numero)
+
+#14. Lista de frutas com insert no início
 listadefrutas = ["maça","banana","uva"]
 listadefrutas.insert(0,"Laranja")
 print(listadefrutas)
 
-
+#15Dada a lista ["A", "B", "C"], use pop para remover e imprimir o ´ultimo elemento.
+lista15=["A", "B", "C"]
+ultimo=lista15.pop()
+print(ultimo)
 
 
 #20. Crie uma lista de 5 letras e converta para uma ´unica string com join.
@@ -94,7 +105,75 @@ listadeletras = ["p","a","u","l","o"]
 letras= "".join(listadeletras)
 print(letras)
 
+#21. Solicite ao usu´ario 10 n´umeros, armazene em uma lista e remova todos os n´umeros pares usando remove.
+lista20 = []
+for i in range (10):
+    n21=int(input("Digite dez numeros:  "))
+    lista20.append(n21)
+    for n22 in lista20[:]:
+        if n22 %2 ==0:
+            lista20.remove(n22)
+print(lista20)
 
+
+#Dada uma lista com nomes duplicados, elimine os nomes repetidos mantendo a ordem.
+lista22 = ["Paulo","Vitor","Paulo", "Joao", "Miguel", "Vitor"]
+listaf= []
+for nome in lista22[:]:
+    if nome not in listaf:
+        listaf.append(nome)
+print(listaf)
+
+
+
+
+# Criando a lista
+lista = [10, 20, 30, 40, 50]
+# Substituindo o segundo elemento (índice 1) por 99
+lista[1] = 99
+print(lista)
+
+
+17
+# Criando a lista de 5 números
+numeros = [10, 20, 30, 40, 50]
+# Inicializando a variável para somar os números
+soma = 0
+
+# Usando o laço for para somar os números
+for numero in numeros:
+    soma += numero
+
+# Calculando a média
+media = soma / len(numeros)
+print(f'Média: {media}')
+
+# 18 Lista fornecida
+lista = [3, 6, 9, 12]
+# Verificando se o número 7 está na lista
+if 7 in lista:
+    print("O número 7 está na lista.")
+else:
+    print("O número 7 não está na lista.")
+
+# 19 Criando uma lista para armazenar os nomes
+nomes = []
+
+# Loop para solicitar nomes
+while True:
+    nome = input("Digite um nome (ou 'sair' para terminar): ")
+    if nome.lower() == 'sair':
+        break
+    nomes.append(nome)
+
+# Imprimindo a lista de nomes
+print("Lista de nomes:", nomes)
+
+#20 Criando a lista de 5 letras
+letras = ['a', 'b', 'c', 'd', 'e']
+# Usando join para transformar a lista em uma única string
+resultado = ''.join(letras)
+print(resultado)
 
 
 
